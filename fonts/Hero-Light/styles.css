@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Hero-Light';
+  src: url('Hero-Light.eot?#iefix') format('embedded-opentype'),  url('Hero-Light.otf')  format('opentype'),
+	     url('Hero-Light.woff') format('woff'), url('Hero-Light.ttf')  format('truetype'), url('Hero-Light.svg#Hero-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
