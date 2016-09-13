@@ -67,7 +67,6 @@ body{position: relative;z-index:0;-webkit-font-smoothing: antialiased; -moz-osx-
 @media only screen and (max-width: 1280px) {
   #social-sticker {left: -100%!important;}
   .fixed-logo-wrapper .fixed-logo {right: -100%!important;}
-
 }
 #social-sticker {position: fixed;z-index: 101;left: 0;top: 200px;background: rgb(0, 0, 0);}
 #social-sticker ul {display: block;}
@@ -156,6 +155,10 @@ header #hero .scrollToContentContainer a.scrollToContent i.fa {
   -o-animation:      bob .5s infinite alternate; /* Opera 12+ */
   animation:         bob .5s infinite alternate; /* IE 10+, Fx 29+ */
 }
+
+/* NAV */
+#mobile-nav {display:none;position: relative;z-index: 101;padding: 10px 20px 10px 0;}
+#mobile-nav a.fa {font-size: 20px;color: rgb(255, 255, 255);cursor: pointer;}
 nav {position: fixed;z-index: 100;top: 0;left: 0;width: 100%;background: rgb(0, 0, 0);text-align: center;}
 nav ul {display: inline-block;font-family: 'Helvetica-N';text-transform: uppercase;font-size: 24px;font-weight: 100;width: 100%;}
 nav ul li {position: relative;text-align: center;float: left;width: calc(100% / 6);}
@@ -245,6 +248,13 @@ footer ul.social li {margin:0 30px;}
 @media only screen and (max-width: 767px) {
 	.mobFN {float: none;}  
 	.mobileTAC {text-align: center;}
+  #pop-up-subscribe {display: none;}
+  nav {position: fixed!important;}
+  #mobile-nav {display: block;}
+  nav ul {display: none!important;}
+  nav ul.show {display: block!important;position: relative!important;top:0;left:0;z-index: 100;width: 100%!important;height: 100vh!important;}
+  nav ul li {float: none;width: 100%!important;margin:4.25vh 0;}
+  nav ul li:not(:last-child) a:after {display: none!important;}  
 }/*MOBILE*/
 
 @media only screen and (max-width: 960px) and (min-width: 768px) {
