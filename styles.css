@@ -201,8 +201,14 @@ transition: width .3s ease, left .3s ease;}
 section#media ul.tabs li a:hover:before {position: absolute;content: '';width: 100%;height: 1px;bottom: 20px;left: 0;background: rgba(255, 0, 179,1);}
 
 section#media #instagram {padding: 0 7.5px;}
-section#media #instagram .ig-preview {padding: 15px 7.5px;}
-section#media #instagram .ig-preview a {display: block;position: relative;width: 100%;height: 100%;}
+section#media #instagram .ig-preview {overflow: hidden;border-top: 15px solid #FFF;border-bottom: 15px solid #FFF;border-right: 7.5px solid #FFF;border-left: 7.5px solid #FFF;}
+section#media #instagram .ig-preview a {display: block;position: relative;width: 100%;height: 100%;text-align: center;}
+section#media #instagram .ig-preview a img.placeholder {width: 100%;visibility: hidden;}
+section#media #instagram .ig-preview a img.display {position: absolute;top: 50%;left: 50%;height: 100%;width: auto;
+  -webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);}
 section#media #instagram .ig-preview a:hover:before {position: absolute;z-index: 1;display: block;content:'';width: 100%;height: 100%;top: 0;left: 0;background: rgba(0, 0, 0, .75);font-size: 40px;color:rgba(177, 177, 177, 1.0);text-align: center;}
 @keyframes throbWhite {
   0% {color: rgba(255, 255, 255,1.0);}
