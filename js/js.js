@@ -150,17 +150,24 @@ $(window).scroll(function(){
   });
 
 
-$("a[rel^='magpop']").magnificPopup({type: 'iframe'});
+  $("a[rel^='magpop']").magnificPopup({type: 'iframe'});
 
-$(' a.scrollToContent').on('click', function(event) {
-	event.preventDefault();
-	var target = $($(this).attr('href'));
+  $(' a.scrollToContent').on('click', function(event) {
+  	event.preventDefault();
+  	var target = $($(this).attr('href'));
 
-	if(target.length) {
-		event.preventDefault();
-      $('html, body').animate({
-        scrollTop: (target.offset().top - $('nav').outerHeight())
-      }, 1000);
-	}
-});	
+  	if(target.length) {
+  		event.preventDefault();
+        $('html, body').animate({
+          scrollTop: (target.offset().top - $('nav').outerHeight())
+        }, 1000);
+  	}
+  });	
+
+  $('#mobile-nav a.fa').on('click',function(e){
+    e.preventDefault();
+    $(this).toggleClass('fa-bars');
+    $(this).toggleClass('fa-close');
+    $('nav ul').toggleClass('show');
+  });
 });
